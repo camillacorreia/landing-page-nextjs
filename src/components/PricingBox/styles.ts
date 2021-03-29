@@ -10,7 +10,6 @@ export const Box = styled.section`
     background: ${theme.colors.white};
     padding: ${theme.spacings.medium} calc(${theme.spacings.medium} / 2);
     margin: 0 auto ${theme.spacings.large};
-
     ${media.greaterThan('medium')`
       max-width: 72rem;
       padding: ${theme.spacings.large} ${theme.spacings.xxlarge};
@@ -27,7 +26,6 @@ export const Prices = styled.div`
     align-items: center;
     flex-direction: column;
     margin-bottom: ${theme.spacings.medium};
-
     ${media.greaterThan('medium')`
       margin-bottom: ${theme.spacings.large};
     `}
@@ -39,7 +37,6 @@ export const FullPrice = styled.p`
     color: ${theme.colors.gray};
     font-size: ${theme.font.sizes.large};
     font-weight: 400;
-
     span {
       text-decoration: line-through;
     }
@@ -51,7 +48,6 @@ export const DiscountPrice = styled.p`
     color: ${theme.colors.primary};
     font-size: ${theme.font.sizes.xxlarge};
     font-weight: ${theme.font.bold};
-
     span {
       color: ${theme.colors.texts};
       font-size: ${theme.font.sizes.medium};
@@ -59,35 +55,34 @@ export const DiscountPrice = styled.p`
   `}
 `
 
-export const BenefitsList = styled.ul`
-  ${({ theme }) => css`
-    list-style: none;
-    margin-bottom: ${theme.spacings.large};
-  `}
-`
-
-export const BenefitsItem = styled.li`
-  ${({ theme }) => css`
-    color: ${theme.colors.black};
-    font-size: ${theme.font.sizes.small};
-    position: relative;
-    padding-left: ${theme.spacings.small};
-
-    &::after {
-      content: ' ';
-      position: absolute;
-      width: 0.9rem;
-      height: 0.9rem;
-      top: 0.9rem;
-      left: 0rem;
-      border-radius: 100%;
-      background: ${theme.colors.secondary};
-    }
-
-    &:not(:last-child) {
-      margin-bottom: ${theme.spacings.xsmall};
-    }
-  `}
+export const BenefitsList = styled.div`
+  ul {
+    ${({ theme }) => css`
+      list-style: none;
+      margin-bottom: ${theme.spacings.large};
+    `}
+  }
+  li {
+    ${({ theme }) => css`
+      color: ${theme.colors.black};
+      font-size: ${theme.font.sizes.small};
+      position: relative;
+      padding-left: ${theme.spacings.small};
+      &::after {
+        content: ' ';
+        position: absolute;
+        width: 0.9rem;
+        height: 0.9rem;
+        top: 0.9rem;
+        left: 0rem;
+        border-radius: 100%;
+        background: ${theme.colors.secondary};
+      }
+      &:not(:last-child) {
+        margin-bottom: ${theme.spacings.xsmall};
+      }
+    `}
+  }
 `
 
 export const ButtonFullPrice = styled.span`
