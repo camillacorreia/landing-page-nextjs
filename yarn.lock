@@ -5432,7 +5432,7 @@ next-seo@^4.5.0:
   resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-4.5.0.tgz#d000d4fec1ee02fd7bf458bfc20c334035027939"
   integrity sha512-PqLKaEOBHieXSxXDt++kG/XyJgi4X9N36PzmEBdJpJGkJdnqmdplFMZtz/kjuJJUg3iaVaUg/TAnRDjOROEX4A==
 
-next@^10.1.0:
+next@^10.0.8:
   version "10.1.2"
   resolved "https://registry.yarnpkg.com/next/-/next-10.1.2.tgz#2c508cc2982077f0bad6863be020c10c1d059970"
   integrity sha512-S2KYS8NXeFmaJd8EyoC/kWi3uIlNz3PghnpDWYwy5dxhbtyaozK7fVpXmDcOTQEyYq3BZG5ph0B+hOsAwMdYfQ==
